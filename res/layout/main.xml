@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.45"
+        android:src="@drawable/teacher" />
+
+    <EditText
+        android:id="@+id/output_text"
+        android:layout_width="match_parent"
+        android:layout_height="134dp"
+        android:inputType="textMultiLine"
+        android:scrollbars = "vertical" />
+
+    <EditText
+        android:id="@+id/input_text"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:scrollbars = "vertical" >
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/ask_button"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:text="@string/AskButton" />
+
+        <Button
+            android:id="@+id/explain_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ExplainButton" />
+
+    </LinearLayout>
+
+</LinearLayout>
